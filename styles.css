@@ -1,0 +1,195 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #000000;
+    --main-color: #f0f0f0;
+    --other-color: #ffc633;
+    --second-color: #616060;
+    --h1-font: 5.5rem;
+    --h2-font: 3.5rem;
+    --p-font: 1rem;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    background: var(--bg-color);
+    padding: 18px 14%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all .6s;
+}
+
+/* Navigation Styles */
+.logo {
+    font-size: 33px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist a {
+    margin: 0 30px;
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    transition: all .6s;
+}
+
+.navlist a:hover {
+    transform: translateY(-4px);
+    color: var(--second-color);
+}
+
+#menu-icon {
+    font-size: 35px;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+}
+
+/* Home Section Styles */
+.home {
+    height: 100vh;
+    background: url('img/bg.png') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    padding: 90px 14%;
+}
+
+.home-text h1 {
+    font-size: var(--h1-font);
+    font-weight: 700;
+}
+
+.btn {
+    padding: 14px 42px;
+    background: var(--text-color);
+    color: var(--bg-color);
+    transition: all .6s;
+}
+
+.btn:hover {
+    transform: scale(0.9);
+    background: transparent;
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
+/* Product Section Styles */
+.n-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.row-img img {
+    width: 100%;
+    border-radius: 28px;
+    transition: transform 0.5s;
+}
+
+.row-img:hover img {
+    transform: scale(1.1);
+}
+
+.row-in {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Brands Section Styles */
+.brands {
+    padding: 30px 14%;
+    background: var(--text-color);
+}
+
+.main-brands {
+    display: flex;
+    gap: 36px;
+}
+
+/* Newsletter Section */
+.newsletter {
+    padding: 30px 14%;
+    background: var(--main-color);
+    text-align: center;
+}
+
+/* Contact Form Section */
+.contact {
+    padding: 30px 14%;
+    background: var(--main-color);
+    text-align: center;
+}
+
+/* Cart Modal Styles */
+.cart-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-header {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Footer Styles */
+footer {
+    background: var(--main-color);
+    padding: 20px 14%;
+    text-align: center;
+}
+
+.footer-content {
+    margin-bottom: 10px;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-bottom {
+    font-size: 0.8rem;
+}

@@ -1,0 +1,178 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.navlist {
+    list-style: none;
+    display: flex;
+}
+
+.navlist li {
+    margin: 0 15px;
+}
+
+.navlist a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navlist a:hover {
+    color: #ffcc00; /* Change color on hover */
+}
+
+/* Navigation Icons */
+.nav-right a {
+    color: white;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+/* Product Section Styles */
+.product-section {
+    padding: 20px;
+}
+
+.product-section h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Grid Layout for Products */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Product Card Styles */
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+/* Product Card Hover Effect */
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product Image */
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Product Details */
+.product-details {
+    padding: 15px;
+}
+
+.product-details h2 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    color: #007BFF; /* Bootstrap Primary Color */
+}
+
+.product-details p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Price Tag */
+.product-price {
+    font-size: 1.2em;
+    color: #060807; /* Bootstrap Success Color */
+    font-weight: bold;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007BFF; /* Bootstrap Primary Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    margin-top: 10px; /* Add margin for spacing */
+}
+
+/* Button Hover Effect */
+.button:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
+
+/* Add to Cart Icon */
+.add-cart {
+    display: inline-flex; /* Use flexbox to align items */
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #747574; /* Bootstrap Success Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+/* Add to Cart Icon */
+.add-cart i {
+    margin-left: 5px; /* Space between text and icon */
+}
+
+/* Button Hover Effect */
+.add-cart:hover {
+    background-color: #050805; /* Darker shade for hover */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .product-card {
+        margin: 0 10px; /* Add margin on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-details h2 {
+        font-size: 1.1em; /* Smaller heading on mobile */
+    }
+
+    .product-price {
+        font-size: 1.1em; /* Smaller price on mobile */
+    }
+}
+

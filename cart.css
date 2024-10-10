@@ -1,0 +1,25 @@
+/* Cart Item Styles */
+.cart-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkout Button */
+#checkoutButton {
+    padding: 10px 15px;
+    background-color: #007BFF; /* Bootstrap Primary Color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+/* Checkout Button Hover Effect */
+#checkoutButton:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+}
